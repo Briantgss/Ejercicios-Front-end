@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans";
+    background-color: #383838;
+    
+}
+
+header{
+    background-color: #0D0D0D;
+}
+
+.container-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20% 20px 20%;
+}
+
+.container-menu :hover{
+    text-decoration: underline;
+    color: #1FA1C9;
+    transform: scale(1.1);
+    fill: #1FA1C9;
+}
+
+div a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    fill: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    fill: #FFFFFF;
+}
+
+.icon :hover{
+    fill: #1FA1C9;
+}
+
+.container-info{
+    display: inline-flex;
+    gap: 120px;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 130px; 
+}
+
+.card{
+    height: 616px;
+    width: 424px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #1FA1C9;
+    border-radius: 50px;
+    order: 1;
+}
+
+.info{
+    align-content: center;
+    width: 985px;
+    order: 2;
+    font-size: 40px;
+}
+
+.profile{
+    color: white;
+}
+
+.profile img{
+    padding-top: 45px;
+    width: 287px;
+}
+
+.content h2{
+    font-size: 40px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.content h3{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.content p{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info p{
+    text-align: left;
+    font: normal 40px/48px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
