@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#aboutus">SOBRE NOSOTROS</a></li>
             </ul>
             <div class="logo"><img src="assets/img/logo-nav.png" alt="hazdeco"></div>
             <ul class="menu">
-                <li><a href="#">CATALOGO</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#catalogo">CATALOGO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="hero">
+        <div class="hero" id="home">
             <div class="hero-content">
                 <p class="titulo-1">LA SOLUCIÓN PERFECTA,</p>
                 <p class="titulo-2">HECHA A TU MEDIDA</p>
@@ -37,7 +37,7 @@
     </header>
 
         <!-- Bienvenida -->
-    <section class="bienvenida">
+    <section class="bienvenida" id="aboutus">
         <div>
             <h2>BIENVENIDOS</h2>
             <p>Ofrecemos cerramientos de vidrio y aluminio de alta calidad, fusionando estética y funcionalidad. Innovamos y personalizamos cada proyecto para crear espacios únicos y a tu medida.</p>
@@ -51,8 +51,54 @@
         </div>
     </section>
 
+        <!-- Sobre Nosotros -->
+    <section class="servicios">
+        <div class="lista-servicios">
+            <div class="servicio">
+                <i class="fas fa-tools"></i>
+                <div>
+                  <h3>INSTALACIÓN PROFESIONAL</h3>
+                  <p>Instalación de ventanas, puertas y cortinas por profesionales. Garantía para asegurar la calidad.</p>
+                </div>
+              </div>
+              <div class="servicio">
+                <i class="fas fa-ruler-combined"></i>
+                <div>
+                  <h3>MEDICIÓN PRECISA</h3>
+                  <p>Medición a domicilio para asegurar que todo encaje perfectamente.</p>
+                </div>
+              </div>
+              <div class="servicio">
+                <i class="fas fa-pen-nib"></i>
+                <div>
+                  <h3>DISEÑO PERSONALIZADO</h3>
+                  <p>Personalización en tamaño, color y estilo para satisfacer preferencias.</p>
+                </div>
+              </div>
+              <div class="servicio">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h3>ATENCIÓN AL CLIENTE</h3>
+                  <p>Resolvemos preguntas, reclamos y ofrecemos soporte postventa.</p>
+                </div>
+              </div>
+              <div class="servicio">
+                <i class="fas fa-receipt"></i>
+                <div>
+                  <h3>GARANTÍA DE PRODUCTO</h3>
+                  <p>Garantías extendidas sobre todos los productos vendidos.</p>
+                </div>
+              </div>
+        </div>
+        <div class="servicios-img">
+            <img src="assets/img/aboutus-instalacion.png" alt="Instalación">
+            <img src="assets/img/aboutus-medicion.png" alt="Medición">
+            <img src="assets/img/aboutus-mision.png" alt="Mision">
+        </div>
+    </section>
+
         <!-- Productos -->
-    <section>
+    <section id="catalogo">
         <div class="productos-titulo">
             <h2>NUESTROS PRODUCTOS</h2>
             <a href="#">VER CATALOGO</a>
@@ -78,6 +124,26 @@
             </div>
         </div>
     </section>
+
+        <!-- Mini Catalogo -->
+    <section class="minicatalogo">
+        <div class="minicatalogo-text">
+            <h2>CORTINAS DE VIDRIO</h2>
+            <p>Las cortinas de vidrio de Haz Deco son la solución perfecta para crear espacios elegantes, funcionales y protegidos sin perder la conexión con el exterior. Gracias a su diseño sin perfiles verticales, ofrecen una vista panorámica ininterrumpida, permitiendo disfrutar de la luz natural y del paisaje con total comodidad. Fabricadas con vidrio templado de alta resistencia, nuestras cortinas brindan aislamiento térmico y acústico, protegiendo tu hogar o negocio del viento, la lluvia y el ruido sin sacrificar estilo ni luminosidad. Son ideales para balcones, terrazas, galerías y espacios comerciales, aportando un toque moderno y sofisticado.</p>
+        </div>
+        <div class="minicatalogo-imagenes">
+            <img src="assets/img/minicatalogo-1.png" alt="catalogo 1">
+            <img src="assets/img/minicatalogo-2.png" alt="catalogo 2">
+            <img src="assets/img/minicatalogo-3.png" alt="catalogo 3">
+            <img src="assets/img/minicatalogo-4.png" alt="catalogo 4">
+            <img src="assets/img/minicatalogo-5.png" alt="catalogo 5">
+            <img src="assets/img/minicatalogo-6.png" alt="catalogo 6">
+            <img src="assets/img/minicatalogo-7.png" alt="catalogo 7">
+            <img src="assets/img/minicatalogo-8.png" alt="catalogo 8">
+            <img src="assets/img/minicatalogo-9.png" alt="catalogo 9">
+        </div>
+    </section>
+
         <!-- Reseñas -->
      <section class="reseñas">
         <div class="reseñas-texto">
@@ -91,13 +157,67 @@
         </div>
     </section>
 
-        <!-- Banner -->
-    <section class="banner">
-        <div class="banner-contenido">
-            <h2>PEDI TU PRESUPUESTO</h2>
-            <h2>GRATIS YA</h2>
-            <a href="#" class="btn">CONTÁCTANOS</a>
+        <!-- Formulario contacto -->
+    <div class="form-titulo" id="contacto">
+        <h2>PEDI TU PRESUPUESTO</h2>
+        <h2>GRATIS YA</h2>
+    </div>
+    <section class="form-contacto">
+        <div class="formulario">
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="tel" placeholder="Numero de Teléfono" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Asunto" required>
+                <textarea placeholder="Mensaje"></textarea>
+                <button class="btn-enviar" type="submit">
+                    <p>ENVIAR</p><img src="assets/svg/arrow.svg" alt="arrow" class="arrow">
+                </button>
+            </form>
+        </div>
+        <div class="form-imagen">
+            <img src="assets/img/form-imagenes.png" alt="contacto">
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-col logo">
+            <img src="assets/img/footer-logo.png" alt="Haz Deco logo">
+          </div>
+      
+          <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#catalogo">Catálogo</a></li>
+              <li><a href="#aboutus">Sobre Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-col">
+            <h4>Información</h4>
+            <ul>
+              <li>Funes, Santa Fe, Argentina</li>
+              <li>+54 341 - 5158067</li>
+              <li><a href="mailto:info@hazdeco.com.ar">info@hazdeco.com.ar</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-col">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+              <a href="#"><img src="assets/svg/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="assets/svg/instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="assets/svg/whatsapp.png" alt="WhatsApp"></a>
+              <a href="#"><img src="assets/svg/youtube.png" alt="YouTube"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>HazDeco © 2025 Todos los Derechos Reservados</p>
+        </div>
+      </footer>
 </body>
 </html>
